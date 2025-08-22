@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ประวัติการทำงาน - Portfolio กฤติสักดิ์</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="../index.html" class="nav-brand">Portfolio</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-links">
+            <li><a href="../index.html">หน้าแรก</a></li>
+            <li><a href="work-history.html" class="active">ประวัติการทำงาน</a></li>
+            <li><a href="projects.html">ผลงาน</a></li>
+            <li><a href="certificates.html">เกียรติบัตร</a></li>
+        </ul>
+    </nav>
+
+    <section class="section" style="margin-top: 40px;">
+        <h2>ประวัติการทำงาน</h2>   
+                    <div class="work-content">
+                        <div class="work-image">
+                            <img src="../img/rbac-01.jpg" alt="โรงเรียนราชบุรีบริหารธุรกิจ">
+                        </div>
+                        <div class="work-info">
+                            <h3>โรงเรียนราชบุรีบริหารธุรกิจ</h3>
+                            <div class="work-meta">
+                                <p class="position"><i class="fas fa-briefcase"></i>ครูผู้สอนวิชาคอมพิวเตอร์</p>
+                                <p class="date"><i class="fas fa-calendar"></i>2024-ปัจจุบัน</p>
+                            </div>
+                            <div class="work-description">
+                                <p>ปฏิบัติหน้าที่สอนในรายวิชาคอมพิวเตอร์ ระดับประกาศนียบัตรวิชาชีพ (ปวช.) โดยเน้นการเรียนการสอนในรายวิชาเกี่ยวกับ กราฟิกคอมพิวเตอร์ และ การพัฒนาเว็บไซต์</p>
+                                <ul class="duties">
+                                    <li><i class="fas fa-check"></i><span>สอนวิชาคอมพิวเตอร์กราฟิก</span></li>
+                                    <li><i class="fas fa-check"></i><span>สอนการพัฒนาเว็บไซต์</span></li>
+                                    <li><i class="fas fa-check"></i><span>ดูแลและให้คำปรึกษาโครงงานนักศึกษา</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                    <div class="work-content">
+                        <div class="work-image">
+                            <img src="../img/ppy-01.jpg" alt="บริษัท พีพีวาย">
+                        </div>
+                        <div class="work-info">
+                            <h3>บริษัท พีพีวาย เอ็นเตอร์ไพรส์เทคโนโลยี จำกัด</h3>
+                            <div class="work-meta">
+                                <p class="position"><i class="fas fa-briefcase"></i>กราฟิกดีไซน์</p>
+                                <p class="date"><i class="fas fa-calendar"></i>2023-2024</p>
+                            </div>
+                            <div class="work-description">
+                                <p>รับผิดชอบการออกแบบและจัดทำสื่อสิ่งพิมพ์และสื่อดิจิทัล รวมถึงการดูแลและบริหารจัดการแฟนเพจ</p>
+                                <ul class="duties">
+                                    <li><i class="fas fa-check"></i>ออกแบบสื่อสิ่งพิมพ์และสื่อดิจิทัล</li>
+                                    <li><i class="fas fa-check"></i>จัดทำคอนเทนต์สำหรับโซเชียลมีเดีย</li>
+                                    <li><i class="fas fa-check"></i>ออกแบบป้ายโฆษณาและสื่อประชาสัมพันธ์</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <div class="work-content">
+                        <div class="work-image">
+                            <img src="../img/str.jpg" alt="S.T.R">
+                        </div>
+                        <div class="work-info">
+                            <h3>S.T.R สเทร็ง(ประเทศไทย) จำกัด</h3>
+                            <div class="work-meta">
+                                <p class="position"><i class="fas fa-briefcase"></i>ผู้ช่วยช่างควบคุมเครื่องจักร</p>
+                                <p class="date"><i class="fas fa-calendar"></i>2022-2023</p>
+                            </div>
+                            <div class="work-description">
+                                <p>ดำเนินการออกแบบและจัดทำโครงสร้างชิ้นงาน ควบคุมเครื่องจักรอุตสาหกรรม</p>
+                                <ul class="duties">
+                                    <li><i class="fas fa-check"></i>ควบคุมเครื่องจักร CNC และเลเซอร์</li>
+                                    <li><i class="fas fa-check"></i>ออกแบบและผลิตป้ายโลโก้</li>
+                                    <li><i class="fas fa-check"></i>ดูแลและบำรุงรักษาเครื่องจักร</li>
+                                </ul>
+                            </div>
+                        </div>
+                    
+
+            
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            let currentSlide = 0;
+            const slider = document.querySelector('.work-slider');
+            const slides = document.querySelectorAll('.work-slide');
+            const dots = document.querySelectorAll('.dot');
+            let touchStartX = 0;
+            let touchEndX = 0;
+
+            // เริ่มต้นการแตะหน้าจอ
+            slider.addEventListener('touchstart', function(e) {
+                touchStartX = e.touches[0].clientX;
+            });
+
+            // ขณะลากนิ้ว
+            slider.addEventListener('touchmove', function(e) {
+                e.preventDefault(); // ป้องกันการเลื่อนหน้า
+            });
+
+            // เมื่อปล่อยนิ้ว
+            slider.addEventListener('touchend', function(e) {
+                touchEndX = e.changedTouches[0].clientX;
+                handleSwipe();
+            });
+
+            // จัดการการเลื่อน
+            function handleSwipe() {
+                const swipeThreshold = 50; // ระยะขั้นต่ำในการเลื่อน
+                const swipeDistance = touchEndX - touchStartX;
+
+                if (Math.abs(swipeDistance) > swipeThreshold) {
+                    if (swipeDistance > 0) {
+                        // เลื่อนไปทางขวา (ก่อนหน้า)
+                        showSlide(currentSlide - 1);
+                    } else {
+                        // เลื่อนไปทางซ้าย (ถัดไป)
+                        showSlide(currentSlide + 1);
+                    }
+                }
+            }
+
+            // แสดงสไลด์
+            function showSlide(n) {
+                slides.forEach(slide => {
+                    slide.classList.remove('active');
+                    slide.style.transform = 'translateX(100%)';
+                });
+                dots.forEach(dot => dot.classList.remove('active'));
+                
+                currentSlide = (n + slides.length) % slides.length;
+                
+                slides[currentSlide].classList.add('active');
+                slides[currentSlide].style.transform = 'translateX(0)';
+                dots[currentSlide].classList.add('active');
+            }
+
+            // เพิ่มการคลิกที่ dots
+            dots.forEach((dot, index) => {
+                dot.addEventListener('click', () => {
+                    showSlide(index);
+                });
+            });
+
+            // เพิ่มการรองรับการใช้เมาส์ลาก (สำหรับคอมพิวเตอร์)
+            let isDragging = false;
+            let startPos = 0;
+            let currentTranslate = 0;
+
+            slider.addEventListener('mousedown', dragStart);
+            slider.addEventListener('mousemove', drag);
+            slider.addEventListener('mouseup', dragEnd);
+            slider.addEventListener('mouseleave', dragEnd);
+
+            function dragStart(e) {
+                isDragging = true;
+                startPos = e.clientX;
+                slider.style.cursor = 'grabbing';
+            }
+
+            function drag(e) {
+                if (isDragging) {
+                    e.preventDefault();
+                    const currentPosition = e.clientX;
+                    currentTranslate = currentPosition - startPos;
+                }
+            }
+
+            function dragEnd() {
+                isDragging = false;
+                slider.style.cursor = 'grab';
+                
+                if (Math.abs(currentTranslate) > 100) {
+                    if (currentTranslate > 0) {
+                        showSlide(currentSlide - 1);
+                    } else {
+                        showSlide(currentSlide + 1);
+                    }
+                }
+                currentTranslate = 0;
+            }
+        });
+    </script>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>ติดต่อ</h3>
+                <p>Email: kittisak.01.09.44@gmail.com</p>
+                <p>โทร: 095-441-8512</p>
+                <p>Address : 28/3 Moo 6, Chom Bueng, Chom Bueng, Ratchaburi 70150, Thailand</p>
+            </div>
+            <div class="social-links">
+                <a href="https://www.facebook.com/your.profile" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://line.me/ti/p/your.line.id" target="_blank"><i class="fab fa-line"></i></a>
+                <a href="https://github.com/your.profile" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Portfolio. All rights reserved.</p>
+            >
+        </div>
+    </footer>
+
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ผลงาน - Portfolio กฤติสักดิ์</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="../index.html" class="nav-brand">Portfolio</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-links">
+            <li><a href="../index.html">หน้าแรก</a></li>
+            <li><a href="work-history.html">ประวัติการทำงาน</a></li>
+            <li><a href="projects.html" class="active">ผลงาน</a></li>
+            <li><a href="certificates.html">เกียรติบัตร</a></li>
+        </ul>
+    </nav>
+
+    <section class="section" style="margin-top: 80px;">
+        <h2>ผลงาน</h2>
+        <div class="gallery">
+            <div class="info">
+                <img src="../img/projects/51389.jpg" alt="RookieUp" class="thumb">
+                <p>แข่งทักษะ: SketchUp เหรียญทอง</p>
+            </div>
+            <div class="info">
+                <img src="../img/projects/51164.jpg" alt="Quickdraw" class="thumb">
+                <p>แข่งทักษะ: เว็บไซต์-กราฟิก เหรียญทองแดง</p>
+            </div>
+            <div class="info">
+                <img src="../img/projects/51388.jpg" alt="Letterly" class="thumb">
+                <p>ออกแบบ ป้ายประชาสัมพันธ์</p>
+            </div>
+            <div class="info">
+                <img src="../img/projects/51174.jpg" alt="RookieUp" class="thumb">
+                <p>ประกาศรับสมัคร นักศึกษา</p>
+            </div>
+            <div class="info">
+                <img src="../img/projects/51175.jpg" alt="Letterly" class="thumb">
+                <p>ประกาศรับสมัคร นักเรียน</p>
+            </div>
+            <div class="info">
+                <img src="../img/projects/ป้ายรวม 9.5x3 เมตร-04-02.jpg" alt="Quickdraw" class="thumb">
+                <p>ป้ายโฆษณา รับสมัครอนุบาล</p>
+            </div>
+            <div class="info">
+                <img src="../img/projects/ป้ายรวม 9.5x3 เมตร-04-03.jpg" alt="Perka Web Design" class="thumb">
+                <p>ป้ายโฆษณา รับสมัครนักเรียน</p>
+            </div>
+            <div class="info">
+                <img src="../img/ppy-01.jpg" alt="Greensbury Market" class="thumb">
+                <p>ออกแบบ ป้ายบริษัท</p>
+            </div>
+            <div class="info">
+                <img src="../img/projects/ppyกล้อง1.png" alt="PPY Product" class="thumb">
+                <p>โฆษณา สินค้าPPY</p>
+            </div>
+            <div class="info">
+                <img src="../img/projects/ppyกล้อง2.png" alt="PPY Product" class="thumb">
+                <p>โฆษณา สินค้าPPY</p>
+            </div>
+            <div class="info">
+                <img src="../img/projects/ออกแบบชุดกีฬาสีครู.png" alt="Sport Uniform" class="thumb">
+                <p>ออกแบบเสื้อ วิ่งมาราธอน</p>
+            </div>
+            <div class="info">
+                <img src="../img/projects/ออกแบบชุดกีฬาสีครู.png" alt="Sport Uniform" class="thumb">
+                <p>ออกแบบเสื้อ กีฬาสีโรงเรียน</p>
+            </div>
+            <div class="info">
+                <img src="../img/projects/ออกแบบชุดกีฬาสี สตาฟ.png" alt="Staff Uniform" class="thumb">
+                <p>ออกแบบเสื้อ STAFF</p><img src="../img/projects/ออกแบบชุดกีฬาสีครู.png" alt="Sport Uniform" class="thumb">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>ติดต่อ</h3>
+                <p>Email: kittisak.01.09.44@gmail.com</p>
+                <p>โทร: 095-441-8512</p>
+                <p>Address : 28/3 Moo 6, Chom Bueng, Chom Bueng, Ratchaburi 70150, Thailand</p>
+            </div>
+            <div class="social-links">
+                <a href="https://www.facebook.com/your.profile" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://line.me/ti/p/your.line.id" target="_blank"><i class="fab fa-line"></i></a>
+                <a href="https://github.com/your.profile" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Image Modal for Projects
+            const projectImages = document.querySelectorAll('.gallery .info');
+            projectImages.forEach(item => {
+                const img = item.querySelector('img');
+                if (img) {
+                    item.addEventListener('click', function() {
+                        const modal = document.createElement('div');
+                        modal.className = 'image-modal';
+                        modal.innerHTML = `
+                            <div class="modal-content">
+                                <img src="${img.src}" alt="${img.alt}">
+                            </div>
+                        `;
+                        document.body.appendChild(modal);
+
+                        modal.addEventListener('click', () => {
+                            modal.remove();
+                        });
+
+                        // Close modal with ESC key
+                        document.addEventListener('keydown', function(e) {
+                            if (e.key === 'Escape') {
+                                modal.remove();
+                            }
+                        });
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
